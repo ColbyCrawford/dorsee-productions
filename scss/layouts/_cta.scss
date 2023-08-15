@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+#cta {
+    background-image: url('/assets/images/cta-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 9rem;
+}
+
+#cta-title {
+    --p-text-color: hsl(var(--clr-neutral-100));
+
+    color: var(--p-text-color);
+    text-align: center;
+    max-inline-size: 22ch;
+}
+
+.l-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}    

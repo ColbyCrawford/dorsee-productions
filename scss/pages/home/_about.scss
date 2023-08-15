@@ -1,0 +1,74 @@
+@use '../../abstracts' as *;
+
+#about {
+    @media #{$break1} {
+        margin-block-end: pxToRem(180);
+    }
+    @media #{$break2open} {
+        margin-block-end: pxToRem(220);
+    }
+}
+
+.l-about {
+    display: flex;
+    gap: 4rem;
+
+    @media #{$break1}, #{$break2} {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.about-text {
+    flex-basis: 55%;
+    max-width: 50ch;
+}
+
+.about-graphic {
+    position: relative;
+    flex-basis: 45%;
+
+    &::before {
+        content: url('/assets/images/decor-dots-blue.svg');
+        position: absolute;
+        right: -2.65rem;
+        top: 2rem;
+        z-index: -1;
+    }
+
+    @media #{$break1}, #{$break2} {
+        margin-bottom: 1.5rem;
+    }
+}
+
+#about-title {
+    margin-bottom: 2rem;
+}
+
+.about-text > p:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.about-text > p:last-of-type {
+    margin-bottom: 3rem;
+}
+
+.about-img {
+    display: block;
+    @media #{$break3open} {
+        position: absolute;
+        inset: 0 0 auto auto;
+    }
+}
+
+.about-graphic .quote-card {
+    position: absolute;
+    bottom: -2.5rem;
+
+    @media #{$break1}, #{$break2} {
+        left: -3rem;
+    }
+    @media #{$break3open} {
+        right: 10rem;
+    }
+}

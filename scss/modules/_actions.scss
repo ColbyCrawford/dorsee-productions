@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.section-actions {
+     display: flex;
+
+     @media #{$break1} {
+          flex-direction: column;
+          gap: 1rem;
+     }
+
+     @media #{$break2open} {
+          gap: 1.5rem;
+     }
+}

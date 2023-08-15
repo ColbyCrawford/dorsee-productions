@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.overlay-visible::before {
+    --p-background-color: hsl(var(--clr-neutral-800), 80%);
+
+    content: '';
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    background-color: var(--p-background-color);
+}

@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+#affiliates {
+    padding-block: 1rem 5.5rem;
+    margin-block-end: pxToRem(160);
+}
+
+.l-affiliates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(pxToRem(200), 1fr));
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.affiliate-card {
+    --p-background-color: hsl(var(--clr-secondary-400), 8%);
+    --p-border-radius: 0.5rem;
+
+    block-size: pxToRem(140);
+    background-color: var(--p-background-color);
+    display: grid;
+    align-content: center;
+    text-align: center;
+    padding-inline: 0.625rem;
+    border-radius: var(--p-border-radius);
+}

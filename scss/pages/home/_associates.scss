@@ -1,0 +1,76 @@
+@use '../../abstracts' as *;
+
+#associates {
+    margin-block-end: pxToRem(160);
+}
+
+#associates-title {
+    max-inline-size: 20ch;
+}
+
+.l-associates {
+    display: flex;
+    
+    @media #{$break1}, #{$break2} {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media #{$break3open} {
+        gap: 4rem;
+    }
+}
+
+.associates-graphic {
+    flex-basis: 40%;
+    position: relative;
+
+    &::before {
+        content: url('/assets/images/decor-dots-red.svg');
+        position: absolute;
+        top: -2.5rem;
+        left: -2.5rem;
+        z-index: -1;
+    }
+
+    @media #{$break1}, #{$break2} {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.associates-text {
+    @media #{$break1}, #{$break2} {
+        max-inline-size: 50ch;
+        inline-size: 100%;
+    }
+    @media #{$break3open} {
+        flex-basis: 60%;
+    }
+}
+
+.associates-list {
+    margin-block: 3rem 4rem;
+
+    @media #{$break3open} {
+        columns: 2;
+    }
+}
+
+
+.associates-list-item {
+    display: flex;
+    gap: 1rem;
+
+    &::before {
+        content: url('/assets/icons/star-bullet.svg');
+        display: flex;
+    }
+
+    @media #{$break3open} {
+        white-space: nowrap;
+    }
+}
+
+.associates-list-item:not(:last-of-type) {
+    margin-bottom: 2rem;
+}

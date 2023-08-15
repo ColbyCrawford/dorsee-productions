@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+// BACKGROUND COLORS
+.u-bg-neutral-300 {
+    background-color: hsl(var(--clr-neutral-300));
+}
+
+// TEXT COLORS
+.u-clr-primary-400 {
+    color: hsl(var(--clr-primary-400));
+}

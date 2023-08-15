@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+%btn {
+    --p-font-size: #{$fs-btn};
+    --p-font-weight: #{$fw-regular};
+    --p-padding: 0.875rem 2rem;
+    --p-border-radius: 0.5rem;
+
+    display: inline-flex;
+    justify-content: center;
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: 1.4;
+    padding: var(--p-padding);
+    border-radius: var(--p-border-radius);
+    cursor: pointer;
+}
+
+.btn-primary {
+    @extend %btn;
+
+    --p-text-color: hsl(var(--clr-neutral-100));
+    --p-button-color: hsl(var(--clr-primary-400));
+
+    color: var(--p-text-color);
+    background-color: var(--p-button-color);
+}
+
+.btn-secondary-300 {
+    @extend %btn;
+
+    --p-text-color: hsl(var(--clr-neutral-100));
+    --p-button-color: hsl(var(--clr-secondary-300));
+
+    color: var(--p-text-color);
+    background-color: var(--p-button-color);
+}
+
+.btn-ghost {
+    @extend %btn;
+
+    --p-text-color: hsl(var(--clr-neutral-800));
+    --p-button-color: hsl(var(--clr-neutral-800));
+
+    color: var(--p-text-color);
+    border: 0.0625rem solid var(--p-button-color);
+}

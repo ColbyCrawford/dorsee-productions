@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+#footer {
+    --p-background-color: hsl(var(--clr-neutral-900));
+    --p-text-color: hsl(var(--clr-neutral-100));
+
+    background-color: var(--p-background-color);
+    color: var(--p-text-color);
+    padding-block-start: 4.5rem;
+}
+
+.l-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+    margin-block: 2.5rem 4rem;
+
+    @media #{$break1}, #{$break2} {
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+    }
+}
+
+.footer-copywrite {
+    --p-background-color: hsl(var(--clr-primary-400));
+
+    background-color: var(--p-background-color);
+    text-align: center;
+    padding-block: 1rem;
+    align-self: stretch;
+    padding-inline: 1rem;
+}

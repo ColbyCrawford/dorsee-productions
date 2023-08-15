@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+:root {
+    --clr-primary-400: 0, 76%, 58%;
+
+    --clr-secondary-300: 225, 88%, 47%;
+    --clr-secondary-400: 225, 78%, 35%;
+    --clr-secondary-800: 225, 63%, 20%;
+
+    --clr-neutral-100: 0, 0%, 100%;
+    --clr-neutral-200: 180, 20%, 99%;
+    --clr-neutral-300: 200, 14%, 96%;
+    --clr-neutral-800: 233, 44%, 7%;
+    --clr-neutral-900: 225, 9%, 6%;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}

@@ -1,0 +1,69 @@
+@use '../abstracts' as *;
+
+// ---------------------- //
+//    TYPOGRAPHY SCALE    //
+// ---------------------- //
+// $fs-3: 1.125rem;  18px //
+// $fs-4: 1.25rem;   20px //
+// $fs-5: 1.375rem;  22px //
+// $fs-6: 1.5rem;    24px // 
+// $fs-7: 2rem;      32px //
+// $fs-8: 2.625rem;  42px //
+// $fs-9: 4rem;      64px //
+// ---------------------- //
+
+body {
+    --p-text-color: hsl(var(--clr-neutral-800));
+
+    font-family: $ff-primary;
+    font-size: $fs-body;
+    line-height: 1.8;
+    color: var(--p-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $fw-bold;
+}
+
+.heading-xl {
+    @media #{$break1} {
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+
+    @media #{$break2open} {
+        font-size: $fs-9;
+        line-height: 1.0625;
+    }
+}
+
+.heading-lg {
+    font-size: $fs-8;
+    line-height: 1.238095;
+}
+
+.heading-md {
+    font-size: $fs-7;
+    line-height: 1.5;
+}
+
+.heading-sm {
+    font-size: $fs-6;
+    line-height: 1.6666;
+}
+
+.body-lg {
+    font-size: $fs-body-lg;
+    line-height: 1.2727;
+}
+
+.body-sm {
+    font-size: $fs-body-sm;
+    line-height: 1.5555;
+}
+

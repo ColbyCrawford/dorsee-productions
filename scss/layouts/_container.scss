@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.l-container {
+    max-inline-size: 81rem; // 1296px
+    margin-inline: auto;
+    inline-size: calc(100% - (2 * var(--p-container-margin)));
+
+    @media #{$break1} { --p-container-margin: 1rem; }
+    @media #{$break2open} { --p-container-margin: 4.5rem; }
+}

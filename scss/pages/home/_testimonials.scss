@@ -1,0 +1,42 @@
+@use '../../abstracts' as *;
+
+#testimonials {
+    padding-block: pxToRem(128) pxToRem(160);
+}
+
+#testimonials-title {
+    text-align: center;
+    margin-block-end: 2.5rem;
+}
+
+.testimonial-grid {
+    display: flex;
+    gap: 2rem;
+
+    @media #{$break1}, #{$break2} {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.testimonial-grid > * {
+    flex-basis: 100%;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1.5rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.375rem 0 hsl(202, 8%, 80%);
+    text-align: center;
+
+    @media #{$break1}, #{$break2} {
+        max-inline-size: pxToRem(500);
+    }
+}
+
+.testimonial-review {
+    margin-block: 1.5rem;
+}
