@@ -532,9 +532,12 @@ h6 {
   --clr-neutral-900: 225, 9%, 6%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
-  overflow-x: hidden;
 }
 
 .l-hero {
