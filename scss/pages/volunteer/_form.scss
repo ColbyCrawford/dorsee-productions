@@ -1,0 +1,38 @@
+@use '../../abstracts/' as *;
+
+.volunteer-container {
+    max-inline-size: pxToRem(738);
+    margin-inline: auto;
+    padding-block: 6rem pxToRem(200);
+}
+
+.volunteer-form-upper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-inline-size: pxToRem(738);
+    inline-size: 100%;
+    gap: 1.5rem;
+    margin-block-end: 3.5rem;
+}
+
+.volunteer-form-upper > * {
+    flex-grow: 1;
+
+    @media #{$break1} {
+        flex-basis: 100%;
+    }
+    @media #{$break2open} {
+        flex-basis: 40%;
+    }
+}
+
+.volunteer-form-lower {
+    display: grid;
+    gap: 0.5rem;
+    margin-block-end: 2.5rem;
+}
+
+.volunteer-form input {
+    inline-size: 100%;
+}

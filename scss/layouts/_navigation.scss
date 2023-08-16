@@ -41,6 +41,10 @@
     top: 0;
 }
 
+#navigation.has-border {
+    border-bottom: 1px solid hsl(0, 2%, 90%); 
+}
+
 #menu-open-btn,
 #menu-close-btn {
     font-size: 2.5rem;

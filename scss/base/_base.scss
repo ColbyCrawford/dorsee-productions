@@ -21,3 +21,22 @@ html, body {
 body {
     position: relative;
 }
+
+input {
+    --p-border-color: hsl(var(--clr-neutral-900));
+    --p-border-radius: 1rem;
+
+    border: 0.125rem solid var(--p-border-color);
+    border-radius: var(--p-border-radius);
+    padding: 1.3rem 1.25rem;
+}
+
+input::placeholder {
+    --p-text-color: hsl(var(--clr-neutral-900));
+
+    font-size: $fs-4;
+    line-height: 1.4;
+    color: var(--p-text-color);
+    opacity: 1;
+    letter-spacing: 2%;
+}

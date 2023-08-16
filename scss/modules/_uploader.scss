@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.file-uploader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding-block: 1.625rem;
+    border-radius: 2rem;
+    border: 0.25rem dashed hsl(var(--clr-neutral-900), 50%);
+}
+
+.file-uploader-icon {
+    font-size: 4.5rem;
+}
+
+
+.file-browser {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.file-browser::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    block-size: 0.125rem;
+    background-color: hsl(var(--clr-neutral-900));
+}

@@ -8,6 +8,8 @@
 
     display: inline-flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
     font-size: var(--p-font-size);
     font-weight: var(--p-font-weight);
     line-height: 1.4;
@@ -44,4 +46,22 @@
 
     color: var(--p-text-color);
     border: 0.0625rem solid var(--p-button-color);
+}
+
+.btn-with-icon {
+    gap: 1rem;
+
+    &:hover .btn-icon {
+        position: relative;
+        left: 1rem;
+    }
+}
+
+
+.is-rounded {
+    border-radius: 100vh;
+}
+
+.is-full-width {
+    inline-size: 100%;
 }
